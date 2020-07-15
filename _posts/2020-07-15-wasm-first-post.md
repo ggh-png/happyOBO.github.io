@@ -1,0 +1,7 @@
+---
+title: "Previous record"
+date: 2020-07-15 13:46:28 -0400
+categories: webassembly
+---
+
+잘 되는지 확인!
