@@ -13,3 +13,6 @@ iunop : operand having one integer type var
 ibinop : operand having two integer type var
 irelop / frelop : logic operand having integer/float type var
 ```
+
+![keynote02](wasm002.jpeg)
+
