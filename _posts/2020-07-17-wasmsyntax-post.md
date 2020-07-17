@@ -4,7 +4,7 @@ date: 2020-07-17 16:03:28 -0400
 categories: webassembly
 ---
 # instruction & semantic of inst
-![keynote01](./wasm/wasm.001.jpeg)
+![keynote01](/assets/wasm.001.jpeg)
 ## numeric instruction
 ```
 nn,mm : # of bits
@@ -14,5 +14,5 @@ ibinop : operand having two integer type var
 irelop / frelop : logic operand having integer/float type var
 ```
 
-![keynote02](wasm002.jpeg)
+![keynote02](/assets/wasm.002.jpeg)
 
