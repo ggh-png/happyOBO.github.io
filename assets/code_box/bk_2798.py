@@ -1,3 +1,4 @@
+# 브루트 포스
 N, M = map(int, input().split())
 card_list = list(map(int, input().split()))
 max = 0
