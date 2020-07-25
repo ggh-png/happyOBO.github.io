@@ -3,12 +3,28 @@ title: "Daily schedule"
 date: 2020-07-24 16:00:28 -0400
 categories: ToDoList
 ---
+## Schedule
 
-## Daily schedule
+## Weekly schedule
 
-### 20.07.24 [Fri]
+### 20.07.2X
 ***
 - [ ] ```Set``` , ```Load``` 를 기점으로 SyGus function 생성
 - [ ] 알고리즘 수도 코드 작성
 - [ ] 작성시 후위/전위 연산 고려
 - [ ] 출력 리스트 좀더 깔끔하게 뽑기
+- [ ] ```Load``` 리스트 제대로 출력
+
+
+## Daily schedule
+
+### 20.07.24 [Fri]
+***
+- [x] wat format 출력
+
+### 20.07.25 [Sat]
+***
+- [ ] ```JavaScript``` 강의 듣기
+- [ ] 백준 1문제 풀기
+- [ ] 코드 포스 한문제 풀기
+
