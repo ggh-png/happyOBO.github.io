@@ -1,9 +1,8 @@
 ---
-title: "Daily schedule"
+title: "To Do List"
 date: 2020-07-24 16:00:28 -0400
 categories: ToDoList
 ---
-## Schedule
 
 ## Weekly schedule
 
