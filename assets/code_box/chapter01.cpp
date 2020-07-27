@@ -20,6 +20,34 @@ inline int SQUARE(int x)
     return x*x;
 }
 
+namespace BestComImpl
+{
+    void SimpleFunc(void)
+    {
+        std::cout<<"BestCom이 정의한 함수"<<std::endl;
+    }
+}
+
+namespace ProgComImpl
+{
+    void SimpleFunc(void)
+    {
+        std::cout<<"ProgComImpl이 정의한 함수"<<std::endl;
+    }
+}
+
+namespace AAA
+{
+    namespace BBB
+    {
+        namespace CCC
+        {
+            int num1;
+            int num2;
+        }
+    }
+}
+
 int main(void)
 {
     // int num = 20;
@@ -76,8 +104,13 @@ int main(void)
 
     // std::cout<<MyFuncTwo()<<std::endl;
 
-    std::cout<<SQUARE(13)<<std::endl;
+    // std::cout<<SQUARE(13)<<std::endl;
+
+    // BestComImpl::SimpleFunc();
+    // ProgComImpl::SimpleFunc();
+
+    namespace ABC = AAA::BBB::CCC;
+    ABC::num1 = 10;
+    ABC::num2 = 20;
     return 0;
-
-
 }

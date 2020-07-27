@@ -17,7 +17,6 @@ int blank_idx[100][5] = { 0, };
 
 void back(int n,int fill_blanks[])
 {
-                printf("%d",sudoku[i][j]);
     // int k =0;
     // for(int i = 0; i<9; i++)
     // {
