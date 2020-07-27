@@ -17,24 +17,25 @@ int blank_idx[100][5] = { 0, };
 
 void back(int n,int fill_blanks[])
 {
-    int k =0;
-    for(int i = 0; i<9; i++)
-    {
-        for(int j = 0; j<9; j++)
-        {
-            if(sudoku[i][j] == 0 && j < n)
-            {
-                printf("%d",fill_blanks[k++]);
-            }
-            else
-            {
                 printf("%d",sudoku[i][j]);
-            }
-            if(j < 8) printf(" ");
-        }
-        printf("\n");
-    }
-    printf("\n");
+    // int k =0;
+    // for(int i = 0; i<9; i++)
+    // {
+    //     for(int j = 0; j<9; j++)
+    //     {
+    //         if(sudoku[i][j] == 0 && j < n)
+    //         {
+    //             printf("%d",fill_blanks[k++]);
+    //         }
+    //         else
+    //         {
+    //             printf("%d",sudoku[i][j]);
+    //         }
+    //         if(j < 8) printf(" ");
+    //     }
+    //     printf("\n");
+    // }
+    // printf("\n");
     if(n == blank_count)
     {
         int k = 0;
@@ -73,7 +74,7 @@ void back(int n,int fill_blanks[])
                     // printf("4");
                     break;
                 }
-                if( j < 3)
+                else if( j < 3)
                 {
                     for(int p = smallcube_col* 3 ; p < smallcube_col* 3 + 3; p++)
                     {
