@@ -1,16 +1,12 @@
 #include <iostream>
-#include <vector>
-#include <utility> // pair
 
 using namespace std;
 
-// 동적 계획법
+int arr[11000000]= {0,};
 
-long int arr[1000] ={0, };
-
-long int pibonacci(int n)
+int fill_tile(int n)
 {
-    if(n <= 1)
+    if(n<= 2)
     {
         arr[n] = n;
         return n;
@@ -21,11 +17,11 @@ long int pibonacci(int n)
         {
             return arr[n];
         }
-       else
-       {
-            arr[n] = pibonacci(n-1) + pibonacci(n-2);
+        else
+        {
+            arr[n] = (fill_tile(n-1) + fill_tile(n-2)) % 15746;
             return arr[n];
-       }
+        }
     }
 }
 
@@ -33,7 +29,7 @@ int main(void)
 {
     int n;
     cin>>n;
-    pibonacci(n);
-    cout<<arr[n] %15746;
+    fill_tile(n);
+    cout<<arr[n];
     return 0;
 }
