@@ -46,9 +46,9 @@ categories: Aboutme
 
 - **예제를 통한 Javascript 프로그램 합성기**
     - Microsoft Prose 프레임 웤을 이용하여 Javascript 프로그램 합성기 개발
-    {% include video id="5Nq359LHPZc" provider="youtube" %}
+    {% include video id="Nx3uSRGdNRQ" provider="youtube" %}
 
-- **Rummicube Solver**
+- **Rummicube 게임 도우미**
     - [Github](https://github.com/happyOBO/rummicube_solver)
     - Rummicube 보드게임에서 유저가 낼 수 있는 모든 타일 솔루션 제시
 
