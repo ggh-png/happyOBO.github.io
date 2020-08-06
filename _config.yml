@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "obo"
-  avatar           : "assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/my_char.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "잘못된 부분은 피드백 부탁드립니다"
   location         : "Korea"
   email            : "obo314@hanyang.ac.kr"
