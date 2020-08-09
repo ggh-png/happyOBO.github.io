@@ -1,8 +1,7 @@
 #include <iostream>
-#include <stdio.h>
+
 using namespace std;
 
- 
 void quick_sort(int *data, int start, int end){
     if(start >= end){
         // 원소가 1개인 경우
@@ -38,13 +37,36 @@ void quick_sort(int *data, int start, int end){
     
     // 분할 계산
     quick_sort(data, start, j - 1);
-    quick_sort(data, j + 1, end);
+    quick_sort(data, j +1, end );
 }
- 
-int main(void){
-    int data[10] = {3 ,1 ,4 ,3 ,2};
-    quick_sort(data,0,5);
 
-    for(int i = 0; i<5;i++) cout<<data[i]<<" ";
-    return 0;
+
+int acc_sum(int *data,int n)
+{
+    int acc = 0;
+    for(int i = 0; i< n;i++)
+    {
+        for(int j = 0; j<=i;j++)
+        {
+            acc +=data[j];
+        }
+    }
+    return acc;
+}
+
+
+int main(void)
+{
+    int N;
+    int p[1010] = {0,};
+    cin>>N;
+    for(int i = 0;i<N;i++)
+    {
+        cin>>p[i];
+    }
+    
+    quick_sort(p,0,N-1);
+    int result = acc_sum(p,N);
+
+    cout<<result;
 }
