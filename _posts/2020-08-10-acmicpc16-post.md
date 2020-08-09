@@ -23,8 +23,10 @@ categories: 그리디
 32
 ```
 ### 생각한 알고리즘
+
 - 받은 배열 정렬
 - result는 i는 1 ~ N까지의 값에 대해서 1 ~i 값을 계속 더해서 N까지 진행시킨것의 누적 합이다.
+
 ```cpp
 #include <iostream>
 
