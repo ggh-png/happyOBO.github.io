@@ -107,7 +107,7 @@ author:
       url: "https://happyobo.github.io/aboutme/portfolio-post/"
     - label: "To Do List"
       icon: "fas fa-fw fa-link"
-      url: "https://happyobo.github.io/aboutme/TodoList-post/"
+      url: "https://happyobo.github.io/todolist/TodoList-post/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
