@@ -18,6 +18,9 @@
         "ostream": "cpp",
         "bitset": "cpp",
         "utility": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "cstring": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }
