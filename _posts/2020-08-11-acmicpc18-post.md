@@ -41,6 +41,7 @@ for(K+1 개수만큼 진행)
 }
 ```
 - 코드는 다음과 같다.
+
 ```cpp
 #include <iostream>
 #include <algorithm>
