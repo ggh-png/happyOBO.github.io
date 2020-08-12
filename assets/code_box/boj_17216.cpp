@@ -1,28 +1,49 @@
+// 백트래킹
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int mx = 0;
+long int mx = 0;
 int N;
 int arr[1100] ={0,};
-void back(int ed, int sum)
+void back(int flag, vector<int> order)
 {
 
-   for(int i = 0; i<N;i++)
+    if(flag >= N)
+    {
+        long int sum = 0;
+        for(int i = 0; i<order.size();i++)
+        {
+            sum += order[i];
+        }
+        if(mx < sum) mx = sum;
+    }
+   for(int i = flag; i<N;i++)
    {
-       back( , sum+arr[])
+       if(order.size() == 0)
+        {
+            order.push_back(arr[i]);
+            back(i+1,order);
+            order.pop_back();
+        }
+       else if(order.back() > arr[i])
+       {
+           order.push_back(arr[i]);
+           back(i+1,order);
+           order.pop_back();
+       }
    }
 }
 
 int main(void)
 {
-    // int N;
     cin>>N;
-    for(int i=1;i<N;i++)
+    for(int i=0;i<N;i++)
     {
         cin>>arr[i];
     }
-    cout<<N<<endl;
-    back(0,0,1,arr[0]);
+    vector<int> v;
+    back(0,v);
     cout<<mx;
 
 }
