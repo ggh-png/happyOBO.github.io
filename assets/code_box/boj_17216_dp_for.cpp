@@ -17,9 +17,9 @@ int main(void)
         cin>>arr[i];
         d[i] = arr[i];
     }
-    for(int j = 0; j<=N;j++)
+    for(int j = 0; j<N;j++)
     {
-        for(int i=0;i<j;i++)
+        for(int i=0;i<=j;i++)
         {
             if(arr[i] > arr[j])
             {
@@ -28,7 +28,7 @@ int main(void)
             }
 
         }
-        if(d[j] > mx) mx = d[j];
+        // if(d[j] > mx) mx = d[j];
     }
-    cout<<mx;
+    cout<<d[N-1];
 }
