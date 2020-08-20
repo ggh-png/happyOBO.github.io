@@ -10,6 +10,7 @@ int main(void)
     cin>>N;
     int count = 1;
     bool check = true;
+    
     for(int i = 0; check && i< N ; i++)
     {
         int e;
