@@ -1,41 +1,33 @@
-#include <iostream>
-#include <stack>
+#include<iostream>
+#include<stack>
+ 
+ using namespace std;
 
-using namespace std;
-
-int main(void)
-{
-    int N;
+int main() {
+    char sol[200050];
+    int solptr = 0;
+    int n, x, max = 0;
+    cin >> n;
+ 
     stack<int> s;
-    cin>>N;
-    int count = 1;
-    bool check = true;
-    
-    for(int i = 0; check && i< N ; i++)
-    {
-        int e;
-        cin>>e;
-        while(count <= N+1)
-        {
-            if(!s.empty() && s.top() == e)
-            {
-                cout<<"-"<<endl;
-                s.pop();
-                break;
+    while (n--) {
+        cin >> x;
+        if (x>max) {
+            for (int i = max + 1;i <= x;i++) {
+                s.push(i);
+                sol[solptr++] = '+';
             }
-            else if(!s.empty() && e > count && e < s.top())
-            {
-                check = false;
-                break;
-            }
-            else if(e >= count)
-            {
-                s.push(count);
-                cout<<"+"<<endl;
-            }
-            count++;
         }
+        else
+            if (s.top() != x) {
+                cout << "NO";
+                return 0;
+            }
+        s.pop();
+        sol[solptr++] = '-';
+        if (max < x) max = x;
     }
-    if(!check) cout<<"no";
-
+    for (int i = 0;i < solptr;i++) cout << sol[i] << "\n";
+ 
+    return 0;
 }
