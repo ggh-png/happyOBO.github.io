@@ -56,8 +56,8 @@ categories: Aboutme
         - 하드 케이스 제작
 
 - **Pet CCTV Robot**
-    - [Github](https://github.com/ChaeLinYeo/Pet-CCTV-Robot)
-    - 진행 기간 : 2020.04 ~ 2020.06
+    - [Github](https://github.com/KETI-lovelace/Pet-CCTV-Robot)
+    - 진행 기간 : 2020.06 ~ 2020.09
     - 주요 내용
         - 이전에 설정한 위험 구역에 반려동물이 진입하였을시(Ai로 감지) 사용자 앱에게 알람 전달 및 스피커 송출
     - 맡은 역할
@@ -65,6 +65,7 @@ categories: Aboutme
         - 위험 구역 설정 개발 및 위험 구역 진입 시 알고리즘 개발
     - 성과
         - 교내 CARE사업 어드벤처 디자인 은상 수상
+        - 제 4회 KETI 모비우스 개발자 대회 장려 수상
 
 - **입출력 예제를 통한 Javascript 프로그램 합성기 개발**
     - [Youtube](https://youtu.be/Nx3uSRGdNRQ)
