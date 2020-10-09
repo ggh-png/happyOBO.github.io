@@ -88,7 +88,15 @@ categories: Aboutme
     - [Github](https://github.com/happyOBO/classic_games)
     - 주요 내용
         - 옛날 고전 게임들 ~~테트리스, 갤러그 등등..~~ 을 직접 만들어본다.
-        - ``C++``,``OpendGL`` 사용
+        - ``C++``,``OpenGL`` 사용
+    - 맡은 역할
+        - 개인 프로젝트
+
+- **크레이지 아케이드**
+    - [Github](https://github.com/happyOBO/CrazyArcade)
+    - 주요 내용
+        - 넥슨사의 크레이지 아케이드 게임을 직접 만들어본다.
+        - ``C++``,``OpenGL`` 사용
     - 맡은 역할
         - 개인 프로젝트
 
